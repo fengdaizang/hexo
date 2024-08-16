@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #根目录
-cd ../
+echo ${PWD}
 
 # 清理
 hexo clean
@@ -10,7 +10,7 @@ hexo clean
 hexo g
 
 #复制CNAME
-cp ./bin/CNAME ./.deploy_git
+cp ${PWD}/bin/CNAME ${PWD}/public/
 
 #上传
 hexo d
