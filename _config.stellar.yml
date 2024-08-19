@@ -3,6 +3,31 @@
 
 #评论区
 comments:
-  service: beaudar
+  service: artalk
+  utterances:
+    repo: fengdaizang/blog-comments
   beaudar:
     repo: fengdaizang/blog-comments
+  giscus:
+    src: https://giscus.app/client.js
+    data-repo: fengdaizang/blog-comments # [在此输入仓库]
+    data-repo-id: # [在此输入仓库 ID]
+    data-category: # [在此输入分类名]
+    data-category-id:
+    data-mapping: pathname
+    data-strict: 0
+    data-reactions-enabled: 1
+    data-emit-metadata: 0
+    data-input-position: top # top, bottom
+    data-theme: preferred_color_scheme
+    data-lang: zh-CN
+    data-loading: lazy
+    crossorigin: anonymous
+  # Artalk
+  # https://artalk.js.org/
+  artalk:
+    css: http://127.0.0.1:2053/dist/Artalk.css
+    js: http://127.0.0.1:2053/dist/Artalk.js
+    server: http://127.0.0.1:2053
+    placeholder: ''
+    darkMode: auto

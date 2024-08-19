@@ -16,7 +16,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://thcwl.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -108,3 +108,10 @@ deploy:
   repo: git@github.com:fengdaizang/fengdaizang.github.io.git
   branch: main
   message: message
+
+#跨域
+hexo_info_api:
+  allowOrigin: "*" # 设置为 "*" 以允许所有源访问 (跨域访问 Access-Control-Allow-Origin)
+  enable: # 启用你需要的 api 接口 (只有在这里启用的 api 才会生效)
+    - getConf
+  disable_default_api: false
