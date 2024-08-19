@@ -26,8 +26,8 @@ comments:
   # Artalk
   # https://artalk.js.org/
   artalk:
-    css: http://127.0.0.1:2053/dist/Artalk.css
-    js: http://127.0.0.1:2053/dist/Artalk.js
-    server: http://127.0.0.1:2053
+    css: https://unpkg.com/artalk@2.7/dist/Artalk.css
+    js: https://unpkg.com/artalk@2.7/dist/Artalk.js
+    server: https://thcwl.com/artalk/
     placeholder: ''
     darkMode: auto
