@@ -1,14 +1,10 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
-# Site
-title: 市井俗人
+# 网站基本信息
+title: 市井俗人的个人博客 #网站名称
 subtitle: ''
-avatar: 您的头像链接
+avatar: /images/header.jpg #头像链接
 description: ''
 keywords:
-author: suren
+author: 市井俗人
 language:
   - zh-CN
   - en
