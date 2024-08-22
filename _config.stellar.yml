@@ -12,7 +12,7 @@ article:
   type: tech
   # 根据 tags 作为关键词为每一篇文章在线搜索封面
   # 在文章的 front-matter 中写上 cover: xxx 即可。
-  auto_cover: true
+  auto_cover: false
   # npm i hexo-related-popular-posts
   related_posts:
     enable: true
