@@ -1,7 +1,8 @@
 # 网站基本信息
-title: 市井俗人的个人博客 #网站名称
+title: 市井俗人 #网站名称
 subtitle: ''
 avatar: /images/header.jpg #头像链接
+favicon: /images/header.jpg #网站icon
 description: ''
 keywords:
 author: 市井俗人
@@ -104,10 +105,3 @@ deploy:
   repo: git@github.com:fengdaizang/fengdaizang.github.io.git
   branch: main
   message: message
-
-#跨域
-hexo_info_api:
-  allowOrigin: "*" # 设置为 "*" 以允许所有源访问 (跨域访问 Access-Control-Allow-Origin)
-  enable: # 启用你需要的 api 接口 (只有在这里启用的 api 才会生效)
-    - getConf
-  disable_default_api: false

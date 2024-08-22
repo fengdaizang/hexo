@@ -1,3 +1,39 @@
+open_graph:
+  enable: true
+  twitter_id: # for open_graph meta
+
+logo:
+  subtitle: '东隅已逝，桑榆非晚！| 自律即自由' # '文字1 | 文字2' (鼠标放上去会切换到文字2)
+
+article:
+  # 文章类型
+  # tech: 默认技术类文章, story: 图文类文章，文字和段落间增距大。
+  # 可以在 front-matter/topic/wiki 中覆盖此参数
+  type: tech
+  # 根据 tags 作为关键词为每一篇文章在线搜索封面
+  # 在文章的 front-matter 中写上 cover: xxx 即可。
+  auto_cover: true
+  # npm i hexo-related-popular-posts
+  related_posts:
+    enable: true
+    title: 您可能感兴趣的文章
+
+# 文章搜索
+search:
+  service: local_search # local_search, todo...
+  local_search: # 在 front-matter 中设置 indexing:false 来避免被搜索索引
+    field: all # post, page, all
+    path: /search.json # 搜索文件存放位置
+    content: true # 是否搜索内容
+    codeblock: true # 是否搜索代码块（需要content: true)
+
+# 顶部 tab 栏
+site_tree:
+  blog:
+    nav_tabs: # 近期发布 分类 标签 归档 and ...
+      '归档': /archives/
+      '朋友文章': /friends/rss/ # 这里填写的链接要与对应页面一致，否则可能无法正确高亮
+
 #评论区
 comments:
   service: artalk
