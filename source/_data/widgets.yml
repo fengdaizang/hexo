@@ -1,0 +1,105 @@
+# 您可以在这里创建属于自己的侧边栏组件库，在需要的位置放置自己的组件
+# layout即组件布局，支持自定义的有：
+# - markdown: 渲染 md 文本
+#
+ghrepo:
+  layout: ghrepo
+
+related:
+  layout: related
+
+ghissues:
+  layout: ghissues
+  title: # Recent Issues
+  limit: 3 # 显示的issues最大数量
+  labels: # 过滤只显示具有某些标签的issues
+
+# 将其覆盖设置为空，可删除一个默认组件，例如 welcome:
+# Recent update
+recent:
+  layout: recent
+  rss: # /atom.xml # npm i hexo-generator-feed
+  limit: 10 # Count of posts
+
+# 页面树（与当前页面强关联的上下篇文章列表）
+tree:
+  layout: tree
+
+# 本文目录（当前页面内各级标题列表）
+toc:
+  layout: toc
+  list_number: false
+  min_depth: 1
+  max_depth: 6
+  collapse: false # true / false / auto
+  # 编辑本文按钮
+  edit_this_page: # 从开头开始匹配替换
+    '_posts/': # https://github.com/xaoxuu/xaoxuu.com/blob/main/source/_posts/
+    'wiki/stellar/': https://github.com/xaoxuu/hexo-theme-stellar-docs/blob/main/
+
+# GitHub 用户信息
+ghuser:
+  layout: ghuser
+  username: fengdaizang # your github login username
+  avatar: true # show avatar or not
+
+# 本文作者组件，需要先配置作者信息: authors.yml
+author:
+  layout: author
+  avatar: true
+
+# 标签云组件
+tagcloud:
+  layout: tagcloud
+  title: 🏷️ 标签索引
+  # 标签云配置
+  min_font: 12
+  max_font: 24
+  amount: 100
+  orderby: name
+  order: 1 # 1, sac 升序；-1, desc 降序
+  color: false # 使用颜色
+  start_color: # 开始的颜色。您可使用十六进位值（#b700ff），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
+  end_color: # 结束的颜色。您可使用十六进位值（#b700ff），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
+  show_count: false # 显示每个标签的文章总数
+
+timeline:
+  layout: timeline
+  title: 近期动态
+  api: # https://api.github.com/repos/xaoxuu/hexo-theme-stellar/issues
+  user: # 默认显示所有人的数据，设置名称可过滤为仅显示某人的数据，多个名称用英文逗号隔开，不要加空格
+  type: # 默认不用写，如果是友链朋友圈数据请写 fcircle
+  limit: # 默认通过 api 上增加 per_page 来设置，如果是友链朋友圈，可通过这个设置数量
+
+tagtree:
+  layout: tagtree
+  expand_all: false # 是否展开所有节点
+  expand_active: true # 是否展开当前节点
+  show_tagcon: true # 是否显示标签 icon
+
+# 欢迎页
+welcome:
+  layout: markdown
+  title: 旅行者，欢迎你～
+  linklist: # 与 linklist 组件写法相同
+    columns: 1
+    items:
+      - icon: solar:chat-square-bold-duotone
+        title: 说说你的故事吧
+        url: /about/#comments
+  content: |
+    晚来天欲雪，能饮一杯无？
+    <script src="https://v1.hitokoto.cn/?c=i&encode=js&select=%23hitokoto" defer=""></script>
+    <p><span id="hitokoto"></span></p>
+  src: # 可以设置外部 md 文件链接
+
+# 欢迎页
+notice:
+  layout: markdown
+  title: 🪧 公告
+  content: |
+    hi～
+    这里是市井俗人的个人网站
+    主要记录一些开发笔记
+    如有问题，欢迎<a href="mailto:shijingsuren@gmail.com">邮件</a>沟通
+  src: # 可以设置外部 md 文件链接

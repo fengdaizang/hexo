@@ -1,9 +1,14 @@
 ---
-title: Hello World
+title: Hello World 2
 comment_id: hello_world
 tags:
   - test
-category: 游戏
+  - hello
+  - ddi
+category: 
+  - 游戏
+  - 测试
+  - nothing
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
