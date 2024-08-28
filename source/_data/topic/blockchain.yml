@@ -1,0 +1,4 @@
+name: BlockChain # 在面包屑导航上会显示较短的名字
+title: BlockChain - 区块链入门到放弃 # 在列表页会显示完整的专栏标题
+description: 区块链小白的歪脖三之旅
+order_by: -date # 默认是按发布日期倒序排序

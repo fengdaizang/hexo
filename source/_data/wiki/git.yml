@@ -1,0 +1,49 @@
+name: Git # 在面包屑导航上会显示较短的名字
+title: Git - Git的基础操作日记 # 在列表页会显示完整的专栏标题
+subtitle: 'Git的基础操作日记 | 留在这儿比百度方便点'
+tags: git
+icon: /assets/wiki/stellar/icon.svg
+cover: /assets/wiki/stellar/icon.svg
+description: Git的基础操作日记
+repo:
+order_by: -date # 默认是按发布日期倒序排序
+search:
+  filter: /wiki/git/
+  placeholder: 在 git 中搜索...
+leftbar:
+  - tree
+  - timeline_stellar_releases
+  - related
+comment_title: '评论区仅供交流，有问题请提 [issue](https://github.com/xaoxuu/hexo-theme-stellar/issues) 反馈。'
+comments:
+  service: giscus
+  giscus:
+    data-repo: fengdaizang/blog-comments
+    data-mapping: number
+    data-term: 226
+base_dir: /wiki/stellar/
+tree:
+  '快速开始':
+    - index
+    - examples
+    - releases
+  '基本使用':
+    - theme-settings
+    - pages
+    - sidebar
+    - tag-plugins
+    - tag-plugins/express
+    - tag-plugins/data
+    - tag-plugins/container
+    - comments
+  '文档系统':
+    - wiki-settings
+  '进阶玩法':
+    - widgets
+    - advanced-settings
+    - notes
+    - fcircle
+  '技术支持':
+    - articles
+    - todo
+    - contributors
